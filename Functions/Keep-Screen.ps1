@@ -1,5 +1,5 @@
 function Keep-Screen {
-    $VbsPath = "C:\Scripts\Terminal\launcher.vbs"
+    $VbsPath = "Your VBS Path"
 
     if (-not (Test-Path -LiteralPath $VbsPath)) {
         Write-Error "VBS 启动器未找到: $VbsPath"
