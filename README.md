@@ -1,1 +1,2 @@
-# Custom scripts based on windows powershell
+# windows_ps_scripts
+A custom script for windows powershell
