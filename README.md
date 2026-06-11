@@ -13,7 +13,7 @@ WindowsPowerShell/
 │   ├── Invoke-CmdScript.ps1
 │   ├── Keep-Screen.ps1
 │   ├── sudo.ps1
-│   └── unexport.ps1
+│   └── unset.ps1
 ├── Modules/
 │   └── Microsoft.PowerShell.ThreadJob/
 └── Scripts/
@@ -67,17 +67,17 @@ export --help
 - `--Process`: 仅当前 PowerShell 进程有效，关闭窗口后失效。
 - `--Machine`: 系统环境变量，持久保存到系统级环境变量位置，需要管理员权限。
 
-### `unexport`
+### `unset`
 
 删除由 `export` 或系统环境变量机制设置的环境变量。默认删除当前用户环境变量。
 
 ```powershell
-unexport MY_VAR
-unexport MY_VAR --User
-unexport MY_VAR --Process
-unexport MY_VAR --Machine
-unexport A B C --User
-unexport --help
+unset MY_VAR
+unset MY_VAR --User
+unset MY_VAR --Process
+unset MY_VAR --Machine
+unset A B C --User
+unset --help
 ```
 
 作用域规则与 `export` 一致。删除 `--Machine` 级环境变量需要管理员权限。
